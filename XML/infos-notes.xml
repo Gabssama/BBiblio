@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<oeuvre>
+    <titre>
+        <criteres>
+            <illustration>
+                <notes>
+                    <jure>2</jure>
+                    <jure>6</jure>
+                    <jure>4</jure>
+                    <jure>5</jure>
+                </notes>
+            </illustration>
+            <emotion>
+                 <notes>
+                    <jure>2</jure>
+                    <jure>6</jure>
+                    <jure>4</jure>
+                    <jure>5</jure>
+                </notes>
+            </emotion>
+            <miseEnPage>
+                <notes>
+                    <jure>2</jure>
+                    <jure>6</jure>
+                    <jure>4</jure>
+                    <jure>5</jure>
+                </notes>
+            </miseEnPage>
+            <style>
+                 <notes>
+                    <jure>2</jure>
+                    <jure>6</jure>
+                    <jure>4</jure>
+                    <jure>5</jure>
+                </notes>
+            </style>
+        </criteres>
+    </titre>
+</oeuvre>

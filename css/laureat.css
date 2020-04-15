@@ -1,0 +1,208 @@
+/* Feuille de style BBiblio */ 
+
+#blocPage
+{
+    width:80%;
+    margin:auto;
+}
+
+#loginUser
+{
+    float:right;
+    margin: 10px;
+}
+
+ul
+{
+    padding:0;
+    position:relative;
+}
+
+menu ul li
+{
+    display:inline-block;
+    list-style-type: none;
+    border: 1px solid black;
+    width:18%;
+    height: 20px;
+    background-color: azure;
+    text-align:center;
+    box-shadow: 5px 5px 5px black;
+   
+}
+
+menu a
+{
+    text-decoration: none;
+}
+
+#formulaire a
+{
+    text-decoration:underline;
+}
+#formulaire
+{
+    overflow:visible;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    right:10px;
+    background-color: lightcoral;
+    box-shadow: 0px 0px 10px black;
+    border: 2px solid red;
+    font-weight: bold;
+    width: 21%
+
+}
+
+header, footer
+{
+    border:2px solid blue;
+    box-shadow: 5px 5px 5px black;
+}
+
+header h1, header h3
+{
+    margin-left: 10px;
+}
+
+header h1 a
+{
+    text-decoration: none;
+}
+
+footer{
+    text-align:center;
+    padding-right: 30px;
+}
+footer ul li
+{
+    display: inline;
+}
+
+footer img
+{
+    width:25px;
+    height:25px;
+    border-radius:13px;
+    float: right;
+}
+#sidebar
+{
+    float:left;
+    margin: 20px;
+    border: 3px solid blue;
+    width: 300px;
+    height: 600px; 
+    text-align:center; 
+    padding-top:10px;
+}
+
+#sidebar ul li
+{
+    display:inline-block;
+    
+   
+}
+
+#sidebar ul
+{
+    margin:0;
+    
+}
+
+#image h5
+{
+    background-color: red;
+    position:absolute;
+    top: 270px;
+    left: 20px;
+    width: 260px;
+    height: 40px;
+    margin-top: 0;
+}
+
+.miniature
+{
+    width: 80px;
+    
+}
+
+#barreRS
+{
+    width:30%;
+    height:1000px;
+    float:right;
+    
+}
+
+.rs
+{
+    height:300px;
+    overflow:auto;
+    margin:0 10px 10px 10px;
+    box-shadow: 5px 5px 5px black;
+    border: 3px solid blue;
+    display: block;
+}
+
+#info a, #info input
+{
+    float:right;
+    margin-left: 10px;
+}
+
+fieldset ul li
+{
+    display:inline-block;
+    width: 200px; 
+}
+section
+{
+    height:1000px;
+}
+
+#bio
+{
+    border: 1px solid black;
+    height: 300px;
+    margin: 10px 365px 40px 345px;
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+}
+
+#resume
+{
+    border: 1px solid black;
+    margin: 0px 365px 10px 20px;
+    padding: 20px;
+    height:250px;
+}
+
+#partage
+{
+    float:right;
+}
+#partage li
+{
+    display:inline-block;
+}
+
+#partage img
+{
+    border-radius : 25px;
+    height: 30px;
+}
+
+h4
+{
+    margin-top: 5px;
+}
+
+h2
+{
+    background-color: red;
+    margin: 20px 365px 20px 345px;
+    text-align: center;
+}
+

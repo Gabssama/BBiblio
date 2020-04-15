@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Accueil</title>
+    <meta charset="UTF-8">
+    <script src="js/jquery-ui-1.12.1/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<link href="js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="css/accueil.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocPage">
+        <header>
+            <div id="loginUser">
+                <form  name="identifiant" id="logInUser" method="GET" action="" >
+                    <input type="text" id="login"  placeholder="ID" />
+                    <input type="password" id="mdp" placeholder="Mot de passe" />
+                    <input type="button" id="ok" value="Se Connecter" /><br>
+                </form>
+                <i><a href="" id="mdpoublie">Mot de passe oublié ?</a></i>
+            </div>
+            
+            <h1>BBiblio</h1>
+            <h3>Créé par des lecteurs pour des lecteurs</h3>
+            
+            <menu>
+                <ul>
+                    <li id="formulaire">Vous voulez devenir jury ou vous êtes un auteur/éditeur et voulez soumettre une oeuvre ? Remplissez le formulaire en <a href="html/formulaireInscription.html">CLIQUANT ICI</a>.</li>
+                    <li><a href="../index.html">ACCUEIL</a></li>
+                    <li><a href="html/news.html">NEWS</a></li>
+                    <li><a href="html/reglement.html">REGLEMENT</a></li>
+                </ul>
+            </menu>
+        </header>
+    
+    <section>
+        <div id="sidebar">
+            <h2>Réseaux Sociaux</h2>
+                <div class="rs">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="rs">
+                    <a class="twitter-timeline" href="https://twitter.com/TwitterFrance?ref_src=twsrc%5Etfw">Twitter</a><script async src="https://platform.twitter.com/widgets.js"></script>
+                </div> 
+                <div class="rs">
+                    <img src="img/instagram-feed.png" alt="feedinstagram">
+                </div>
+        </div>
+        
+        <div id="laureats">
+            <h2>Les Lauréats</h2>
+                <div id="romanFr" class="prix">
+                    <h3>Meilleur Roman Français</h3>
+                    <img src="img/livre.jpg" alt="imageLivreRomanFr"/>
+                    <h4>Titre : Ipsum Lorem</h4>
+                    <p>Auteur: Patrick Lorem</p>
+                    <p>Editeur: Editions Ipsum</p>
+                    <p><a href="html/laureatRomanFr.html">En savoir plus</a></p>
+                    <p><input type="button" value="Commander" name="commander"/></p>
+                    <p class="resume">
+                        Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta.
+                    </p>
+                    <ul>
+                        <li><a href="" target="_blank"><img src="img/facebook.jpg" alt="facebooklogo" /></a></li>
+                        <li><a href="" target="_blank"><img src="img/twitter.png" alt="twitterlogo" /></a></li>
+                        <li><a href="" target="_blank"><img src="img/instagram.png" alt="instagramlogo" /></a></li>
+                    </ul>
+                </div>
+
+                <div id="romanNonFr" class="prix">
+                    <h3>Meilleur Roman Etranger</h3>
+                    <img src="img/livre.jpg" alt="imageLivreRomanEtr" />
+                    <h4>Titre : Ipsum Lorem</h4>
+                    <p>Auteur: Patrick Lorem</p>
+                    <p>Editeur: Editions Ipsum</p>
+                    <p><a href="html/laureatRomanEtr.html">En savoir plus</a></p>
+                    <p><input type="button" value="Commander" name="commander"/></p>
+                    <p class="resume">
+                        Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta.
+                    </p>
+                    <ul>
+                        <li><a href="" target="_blank"><img src="img/facebook.jpg" alt="facebooklogo" /></a></li>
+                        <li><a href="" target="_blank"><img src="img/twitter.png" alt="twitterlogo"  /></a></li>
+                        <li><a href="" target="_blank"><img src="img/instagram.png" alt="instagramlogo" /></a></li>
+                    </ul>
+                </div>
+
+            <div id="docu" class="prix">
+                <h3>Meilleur Documentaire</h3>
+                <img src="img/livre.jpg" alt="imageLivreDocu" />
+                <h4>Titre : Ipsum Lorem</h4>
+                <p>Auteur: Patrick Lorem</p>
+                <p>Editeur: Editions Ipsum</p>
+                <p><a href="html/laureatDocu.html">En savoir plus</a></p>
+                <p><input type="button" value="Commander" name="commander" /></p>
+                <p class="resume">
+                    Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta.
+                </p>
+                <ul>
+                    <li><a href="" target="_blank"><img src="img/facebook.jpg" alt="facebooklogo" /></a></li>
+                    <li><a href="" target="_blank"><img src="img/twitter.png" alt="twitterlogo"  /></a></li>
+                    <li><a href="" target="_blank"><img src="img/instagram.png" alt="instagramlogo" /></a></li>
+                </ul>
+            </div>
+
+            <div id="bio" class="prix">
+                <h3>Meilleure Biographie</h3>
+                    <img src="img/livre.jpg" alt="imageLivreBio" />
+                    <h4>Titre : Ipsum Lorem</h4>
+                    <p>Auteur: Patrick Lorem</p>
+                    <p>Editeur: Editions Ipsum</p>
+                    <p><a href="html/laureatBiographie.html">En savoir plus</a></p>
+                    <p><input type="button" value="Commander" name="commander"/></p>
+                    <p class="resume">
+                        Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta.
+                    </p>
+                    <ul>
+                        <li><a href="" target="_blank"><img src="img/facebook.jpg" alt="facebooklogo" /></a></li>
+                        <li><a href="" target="_blank"><img src="img/twitter.png" alt="twitterlogo" /></a></li>
+                        <li><a href="" target="_blank"><img src="img/instagram.png" alt="instagramlogo" /></a></li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    
+    <article>
+        <div class="news">
+            <h3>Ipsum Ipsum</h3>
+            <img src="img/news.png" alt="imageUne" />
+            <h4>Multatio sollemniter versabatur iudiciis oportunum veri antea versabatur nullo turbidum.</h4>
+            <p class="apercu">Ac sententia datorum quid ut quidem quid officiis aut ad datorum quidem aequo verendum vera Divitior vocare videtur ad quid quidem Hoc ne ne exigue quid neque officiis aut amicitiam.</p>
+            <p><a href="html/titreNews.html">Lire plus...</a></p>
+        </div>
+        <div class="news">
+            <h3>Ipsum Ipsum</h3>
+            <img src="img/news.png" alt="imageUne" />
+            <h4>Multatio sollemniter versabatur iudiciis oportunum veri antea versabatur nullo turbidum.</h4>
+            <p class="apercu">Ac sententia datorum quid ut quidem quid officiis aut ad datorum quidem aequo verendum vera Divitior vocare videtur ad quid quidem Hoc ne ne exigue quid neque officiis aut amicitiam.</p>
+            <p><a href="html/titreNews.html">Lire plus...</a></p>
+        </div>
+        <div class="news">
+            <h3>Ipsum Ipsum</h3>
+            <img src="img/news.png" alt="imageUne" />
+            <h4>Multatio sollemniter versabatur iudiciis oportunum veri antea versabatur nullo turbidum.</h4>
+            <p class="apercu">Ac sententia datorum quid ut quidem quid officiis aut ad datorum quidem aequo verendum vera Divitior vocare videtur ad quid quidem Hoc ne ne exigue quid neque officiis aut amicitiam.</p>
+            <p><a href="html/titreNews.html">Lire plus...</a></p>
+        </div>
+        <div class="news">
+            <h3>Ipsum Ipsum</h3>
+            <img src="img/news.png" alt="imageUne" />
+            <h4>Multatio sollemniter versabatur iudiciis oportunum veri antea versabatur nullo turbidum.</h4>
+            <p class="apercu">Ac sententia datorum quid ut quidem quid officiis aut ad datorum quidem aequo verendum vera Divitior vocare videtur ad quid quidem Hoc ne ne exigue quid neque officiis aut amicitiam.</p>
+            <p><a href="html/titreNews.html">Lire plus...</a></p>
+        </div>
+    </article>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.jpg" alt="facebook" /></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="img/twitter.png"  alt="twitter" /></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="instagram"/></a></li>
+            <li><a href="mailto:contact@bbiblio.fr">Contact</a></li>
+            <li><a href="" target="_blank">Confidentialité</a></li>
+            <li><a href="" target="_blank">CGU</a></li>
+            <li><a href="" target="_blank">Mentions légales</a></li>
+            <li>BBiblio &copy; 2020</li>
+           
+        </ul>
+    </footer>
+
+</div>
+<script src="js/bbiblio.js"></script>
+</body>
+</html>
+
+
+

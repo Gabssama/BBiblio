@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Comparateur</title>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-ui-1.12.1/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="../js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<link href="../js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocPage">
+        <header></header>
+        
+        <div id="body">
+            <div id="recherche">
+                <h3>Rechercher une ou plusieurs oeuvres à comparer</h3>
+                <p>Catégories : 
+                    <input type="checkbox" name="cat" id="cat1" >Roman français 
+                    <input type="checkbox" name="cat" id="cat2" >Roman étranger
+                    <input type="checkbox" name="cat" id="cat3" >Documentaire
+                    <input type="checkbox" name="cat" id="cat4" >Biographie
+                </p>
+                <p>
+                    <input type="text" id="titre" placeholder="Titre">
+                </p>
+                <p>
+                    <input type="text" id="auteur" placeholder="Auteur">
+                </p>
+                <p>
+                    <input type="text" id="editeur" placeholder="Editeur">
+                </p>
+                <p>
+                    <input type="button" value="Rechercher" />
+                </p>
+            </div>
+            
+            <div id="selection">
+                <h3>Sélectionner une ou plusieurs oeuvres à comparer</h3> 
+                <p>
+                    <label for="listeCat">Catégorie</label>
+                        <select name="categorie" id="listeCat" >
+                            <option value="Roman Français">Roman Français</option>
+                            <option value="Roman Etranger">Roman Etranger</option>
+                            <option value="Biographie">Biographie</option>
+                            <option value="Documentaire">Documentaire</option>
+                        </select>
+                </p>
+                <p>
+                    <label for="noteMax">Note Maxi</label>
+                        <select name="note" id="noteMax" >
+                            <option value="10">10</option>
+                            <option value="9">9</option>
+                            <option value="8">8</option>
+                            <option value="7">7</option>
+                            <option value="6">6</option>
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="0">0</option>
+                        </select>
+                </p>
+            </div>
+            <div id="tableaux">
+                <h3>Cliquez sur une oeuvre pour la mettre dans le tableau comparatif</h3>
+                
+                    <table id="results" class="resultats">
+                        <caption>Résultats</caption>
+                        <thead>
+                            <tr>
+                                <th>Cat.</th>
+                                <th>Titre</th>
+                                <th>Auteur</th>
+                                <th>Editeur</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Roman Français</td>
+                            <td>Le joueur</td>
+                            <td>Kevin</td>
+                            <td>Michel</td>
+                        </tr>
+                        <tr>
+                            <td>Biographie</td>
+                            <td>La table</td>
+                            <td>Jean-mouloud</td>
+                            <td>SuperMax</td>
+                        </tr>
+                    </table>
+                    
+                    <table id="liste" class="resultats" >
+                        <caption>Liste des oeuvres</caption>
+                        <thead>
+                            <tr>
+                                <th>Cat.</th>
+                                <th>Titre</th>
+                                <th>Auteur</th>
+                                <th>Note</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Roman Français</td>
+                            <td>Le joueur</td>
+                            <td>Kevin</td>
+                            <td>Michel</td>
+                        </tr>
+                        <tr>
+                            <td>Biographie</td>
+                            <td>La table</td>
+                            <td>Jean-mouloud</td>
+                            <td>SuperMax</td>
+                        </tr>
+                    </table>
+                    
+            </div>
+            
+                <table id="comparatif" class="avancement">
+                    <caption>Comparatif des oeuvres sélectionnées (10 maximum)</caption>
+                    <thead>
+                        <tr>
+                            <th>Critères</th>
+                            <th>Le joueur</th>
+                            <th>La table</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Style</td>
+                        <td>7</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Illustration</td>
+                        <td>4</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Emotion</td>
+                        <td>5</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Mise en page</td>
+                        <td>2</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Note moyenne</td>
+                        <td>6</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+        </div>
+        <footer></footer>
+    </div>
+<script src="../js/appelHeaderProfilJury.js"></script>
+</body>
+</html>

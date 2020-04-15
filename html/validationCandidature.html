@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Validation candidature</title>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-ui-1.12.1/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="../js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<link href="../js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="../css/formulaireInscription.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocPage">
+        <header></header>
+        <div class="validationAdmin">
+            <form name="candidature" id="form" method="post" action="formulaire.php"> 
+                <h3>Informations sur le jury/auteur/éditeur
+                </h3>
+                <ul>
+                    <li><input type="text" id="nom" placeholder="Nom" disabled></li>
+                    <li><input type="text" id="prenom" placeholder="Prénom" disabled ></li>
+                    <li><input type="text" id="raisonSociale" placeholder="Raison Sociale" disabled></li>
+                    <li><input type="number" name="tel" id="tel" placeholder="Numéro de téléphone" disabled/></li>
+                    <li><input type="number" name="age" id="age" min="18" max="120" placeholder="18" disabled/></li>
+                    <li><input type="email" name="mail" id="email" placeholder="dupont@gmail.com" disabled/></li>
+                    <li><input type="text" id="adresse" placeholder="Adresse" disabled></li>
+                    <li><input type="text" name="codeP" id="location" placeholder="ex:75001" disabled/></li>
+                    <li><textarea name="description" placeholder="Vos motivations/Votre parcours/Votre secteur professionnel" disabled ></textarea></li>
+                    
+                    <input type="button" value="Valider" id="valider"> <!-- envoie un mail automatique avec id et mdp pour une première connexion-->
+                    <input type="button" value="Refuser" id="refuser"><!--envoie un mail automatique de refus avec message de courtoisie-->
+                    
+                </ul>
+            </form>
+        </div>
+        <footer></footer>
+    </div>
+<script src="../js/appelHeaderAdmin.js"></script>
+</body>
+</html>

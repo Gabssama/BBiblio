@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Création/Modification news</title>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-ui-1.12.1/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="../js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<link href="../js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocPage">
+        <header></header>
+        <div id="redaction">
+            <div id="contenuNews">
+                <input type="text" placeholder="Titre de la news"><br>
+                <input type="text" placeholder="Phrase d'accroche"><br>
+                <textarea placeholder="Corps de la news"></textarea><br>
+            </div>
+            <div id="parametresNews">
+                <input type="button" value="Sauvegarder" />         <!-- Pour enregistrer la news dans son état actuel-->
+                <input type="button" value="Publier"/><br>
+                <input type="button" value="Aperçu" id="apercuNews"/>   <!--Aperçu de la news en réel avant de la publier-->
+                <p>Sélectionner une catégorie : <br>
+                    <select name="cat" id="catNews" >
+                        <option value="romanfr">Roman Français</option>
+                        <option value="romanetr">Roman Etranger</option>
+                        <option value="biographie">Biographie</option>
+                        <option value="documentaire">Documentaire</option>
+                    </select>
+                </p>
+                <div>Sélectionner une image en une :<br>
+                    <input type="file" accept="image/png, image/jpeg" id="imageUne" ><br>
+                    <div id="apercu"></div>
+                </div>
+            </div>
+        </div>
+        <div id="publicationRS">
+            <ul>
+                <li><img src="../img/facebook.jpg" alt="facebook" class="rsimg"/><input type="text" placeholder="Message personnalisé" class="rsinput"/></li>
+                <li><img src="../img/twitter.png" alt="twitter" class="rsimg" /><input type="text" placeholder="Message personnalisé" class="rsinput"/></li>
+                <li><img src="../img/instagram.png" alt="instagram" class="rsimg"/><input type="text" placeholder="Message personnalisé" class="rsinput"/></li>
+            </ul>
+        </div>
+        <footer></footer>
+    </div>
+<script src="../js/appelHeaderAdmin.js"></script>
+<script src="../js/bbiblio.js"></script>
+</body>
+</html>

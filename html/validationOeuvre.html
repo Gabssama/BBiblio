@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Validation oeuvre</title>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-ui-1.12.1/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="../js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<link href="../js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocPage">
+        <header></header>
+        <div class="validationAdmin">
+            <form name="validation" id="form" method="post" action="formulaireOeuvre.php">
+                <h3>Oeuvre proposée
+                </h3>
+                <p>
+                    <input type="text" id="titre" placeholder="Titre" disabled>
+                </p>
+                <p>
+                    <input type="text" id="auteur" placeholder="Auteur" disabled>
+                </p>
+                <p>
+                    <input type="text" id="editeur" placeholder="Editeur" disabled>
+                </p>
+                <p>
+                    <input type="date" min="2020-01-01" disabled>
+                </p>
+                <p>
+                    <a href="pdf/oeuvre_soumise.pdf"
+                            download="Oeuvre-soumise.pdf">Télécharger le fichier</a>
+                </p>
+                <p>Catégorie(s) souhaitée(s) pour l'oeuvre soumise :<br> 
+                    <input type="checkbox" name="cat" id="cat1" >Roman français 
+                    <input type="checkbox" name="cat" id="cat2" checked>Roman étranger
+                    <input type="checkbox" name="cat" id="cat3" >Documentaire
+                    <input type="checkbox" name="cat" id="cat4" >Biographie
+                </p>
+                <p>
+                    <input type="number" name="tel" id="tel" placeholder="Numéro de téléphone" disabled/><!--pour contacter directement l'auteur/editeur par téléphone-->
+                </p>
+                <p>
+                    <input type="button" value="Envoyer mail à l'auteur/éditeur" id="envoiMail" /><!--pour contacter l'auteur/editeur par email s'il ne répond pas au téléphone-->
+                </p>
+                <p>
+                    <input type="button" value="Refuser" /> <!-- envoie un mail automatique de refus à l'auteur-->
+                    <input type="button" value="Mettre en attente" /> <!-- Mettre en attente une demande en cours  en attendant la réponse d'un auteur/éditeur--> 
+                    <input type="button" value="Valider" /> <!-- envoie un mail automatique de validation à l'auteur-->
+                </p>
+            </form>
+        </div>
+        <footer></footer>
+    </div>
+<script src="../js/appelHeaderAdmin.js"></script>
+<script src="../js/bbiblio.js"></script>
+</body>
+</html>

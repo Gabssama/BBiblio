@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Profil Jury</title>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-ui-1.12.1/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="../js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<link href="../js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocPage">
+       <header></header>
+       
+       <section>
+            <div id="pub">
+               <h2>PUB</h2>
+            </div>
+            
+            <div id="profil">
+
+                <div id="avatar">
+                    <img src="../img/avatar.png" alt="avatar"><br>
+                    <p>Modifier votre avatar:</p>
+                    <input type="file" accept="image/png, image/jpeg" id="modifPix"> <!-- Pour modifier l'avatar par défaut-->
+                </div>
+
+                <div id="infos">
+
+                    <ul id="infos1">
+                        <li>Nom</li>
+                        <li>Prénom</li>
+                        <li>Age</li>
+                        <li>Adresse complète</li>
+                    </ul>
+
+                    <ul id="infos2">
+                        <li>Email</li>
+                        <li>Identifiant</li>
+                        <li><a href="recapNotes.html">Mon récapitulatif</a></li>
+                        <li><a href="comparateur.html">Comparer les notes des oeuvres</a></li>
+                    </ul>
+
+                </div>
+            </div>
+                
+                <p id="categories">
+                    <span>Choisissez vos catégories :</span> <!--Pour afficher les catégories sélectionnées par le jury-->
+                        <input type="checkbox" name="cat" id="cat1" >Roman français 
+                        <input type="checkbox" name="cat" id="cat2" >Roman étranger
+                        <input type="checkbox" name="cat" id="cat3" >Documentaire
+                        <input type="checkbox" name="cat" id="cat4" >Biographie<br>
+                        <input type="button" value="Confirmer" id="confirmerCat" />
+                </p>
+                <p id="desciption">
+                    Ajoutez une description de votre personnalité, vos passe-temps, votre profession, etc.<br>
+                    <textarea name="description"></textarea><br>
+                    <input type="button" value="Sauvegarder" id="save"> <!-- Pour sauvergarder la saisie de la zone de texte-->
+                </p>
+            
+       </section>
+
+        <footer></footer>
+    </div>
+<script src="../js/appelHeaderProfilJury.js"></script>
+<script src="../js/bbiblio.js"></script>
+</body> 
+</html>

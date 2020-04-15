@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Soumettre une oeuvre</title>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-ui-1.12.1/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="../js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<link href="../js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocPage">
+        <header></header>
+        <div class="soumissionOeuvre">
+            <h3>Formulaire pour soumettre une oeuvre</h3>
+                <form name="soumission" id="form" method="post" action="formulaire.php">
+                    <p>Cochez les catégories que vous souhaitez : <br>
+                        <input type="checkbox" name="cat" id="cat1" >Roman français 
+                        <input type="checkbox" name="cat" id="cat2" >Roman étranger<br>
+                        <input type="checkbox" name="cat" id="cat3" >Documentaire
+                        <input type="checkbox" name="cat" id="cat4" >Biographie
+                    </p>
+                    <p>
+                        <input type="text" id="titre" placeholder="Titre" required>
+                    </p>
+                    <p>
+                        <input type="text" id="auteur" placeholder="Auteur" required>
+                    </p>
+                    <p>
+                        <input type="text" id="editeur" placeholder="Editeur" required>
+                    </p>
+                    <p>
+                        <input type="text" id="dateParution" required placeholder="Date de parution">
+                    </p>
+                    <p>
+                        Sélectionner un fichier au format .pdf<br>
+                        <input type="file" accept="application/pdf" id="oeuvrePdf">
+                    </p>
+                    <p>
+                        <input type="submit" value="Soumettre" id="validerOeuvre" /> <!-- bouton submit qui renvoie à un fichier php pour stocker les données-->
+                    </p>
+                </form>
+
+            </div>
+        <footer></footer>
+    </div>
+<script src="../js/appelHeaderProfilAuteur.js"></script>
+<script src="../js/bbiblio.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Profil Auteur/Editeur</title>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-ui-1.12.1/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="../js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<link href="../js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocPage">
+        <header></header>
+       
+        <section>
+            <div id="pub">
+               <h2>PUB</h2>
+            </div>
+            
+            <div id="profil">
+
+                <div id="avatar">
+                    <img src="../img/avatar.png" alt="avatar"><br>
+                    <p>Modifier votre avatar:</p>
+                    <input type="file" accept="image/png, image/jpeg" id="modifPix"> <!-- Pour modifier l'avatar par défaut-->
+                </div>
+
+                <div id="infos">
+
+                    <ul id="infos1">
+                        <li>Nom</li>
+                        <li>Prénom</li>
+                        <li>Age</li>
+                        <li>Adresse complète</li>
+                    </ul>
+
+                    <ul id="infos2">
+                        <li>Email</li>
+                        <li>Identifiant</li>
+                    </ul>
+
+                </div>
+            </div>
+            
+                <p id="soumettre">
+                    Pour soumettre une oeuvre cliquez sur le bouton ci-contre
+                    <input type="button" value="Soumettre" id="soumettreOeuvre" />
+                </p>
+                <p id="desciption">
+                    Ajoutez une description de votre personnalité, vos passe-temps, votre profession, etc.<br>
+                    <textarea name="description"></textarea><br>
+                    <input type="button" value="Sauvegarder" id="save"> <!-- Pour sauvergarder la saisie de la zone de texte-->
+                </p>
+
+                <table>
+                    <caption>Récapitulatif des oeuvres soumises</caption>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Catégorie</th>
+                            <th>Titre</th>
+                            <th>Auteur</th>
+                            <th>Editeur</th>
+                            <th>Statut</th>
+                            <th>Informations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/01/2020</td>
+                            <td>Documentaire</td>
+                            <td>Les fourmis</td>
+                            <td>Michel</td>
+                            <td>Pangolin Ed.</td>
+                            <td>Acceptée</td>
+                            <td><a href="../XML/infos-notes.xml" download="infos-notes.xml"> Notes décernées</a></td>
+                        </tr>
+                        <tr>
+                            <td>01/01/2020</td>
+                            <td>Documentaire</td>
+                            <td>Les fourmis</td>
+                            <td>Michel</td>
+                            <td>Pangolin Ed.</td>
+                            <td>En cours de validation</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>01/01/2020</td>
+                            <td>Documentaire</td>
+                            <td>Les fourmis</td>
+                            <td>Michel</td>
+                            <td>Pangolin Ed.</td>
+                            <td>En attente</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>01/01/2020</td>
+                            <td>Documentaire</td>
+                            <td>Michel</td>
+                            <td>Les fourmis</td>
+                            <td>Pangolin Ed.</td>
+                            <td>Refusée</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+       </section>
+
+       <footer></footer>
+    </div>
+<script src="../js/appelHeaderProfilAuteur.js"></script>
+<script src="../js/bbiblio.js"></script>
+</body>
+</html>

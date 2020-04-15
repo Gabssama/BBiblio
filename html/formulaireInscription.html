@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Formulaire</title>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-ui-1.12.1/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="../js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<link href="../js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="../css/formulaireInscription.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocPage">
+       <header></header>
+      
+       <section>
+            <div id="pub">
+                <h1>PUB</h1>
+            </div>
+           
+            <form name="candidature" id="form" method="post" action="">  <!-- formulaire pour traiter les demandes pour obtenir un profil de jury ou auteur/éditeur -->
+            <p>Vous candidatez en tant que :
+            <input type="radio" name="statut" value="Jury" id="jury" checked/>Jury
+            <input type="radio" name="statut" value="Auteur/Editeur" id="auteur" />Auteur/Editeur
+            </p>
+            
+            <ul>
+                <li><input type="text" id="nom" placeholder="Nom" required autofocus></li>
+                <li><input type="text" id="prenom" placeholder="Prénom" required></li>
+                <li><input type="text" id="raisonSociale" placeholder="Raison Sociale" disabled></li>
+                <li><input type="text" name="tel" id="tel" placeholder="Numéro de téléphone" required pattern="0[1-9][0-9]{8}"/></li>
+                <li><input type="number" name="age" id="age" min="18" max="120" placeholder="18" required /></li>
+                <li><input type="email" name="mail" id="email" placeholder="dupont@gmail.com" required /></li>
+                <li><input type="text" id="adresse" placeholder="Adresse" required></li>
+                <li><input type="text" name="codeP" id="location" placeholder="ex:75001" required pattern="[0-9]{5}" /></li>
+                <li><textarea name="description" placeholder="Vos motivations/Votre parcours/Votre secteur professionnel" required ></textarea></li>
+                <li><input type="checkbox" name="reglement" id="caseValidation" >En cochant cette case vous attestez avoir pris connaissance du <a href="reglement.html">règlement</a><br> et vous vous engagez à le respecter</li>
+                <input type="submit" value="Valider" id="validerInsc" disabled>                                 <!-- le bouton valider est grisé pour inviter l'utilisateur à lire le réglement avant de cocher la case et ensuite pouvoir valider, une fois validé, le formulaire est envoyé dans la BDD pour être validé par un admin-->
+                
+            </ul>
+           </form>
+       </section>
+        <footer>
+    
+        </footer>
+    </div>
+    <script src="../js/appelHeaderFooter.js"></script>
+    <script src="../js/bbiblio.js"></script>
+</body>
+</html>

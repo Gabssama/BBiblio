@@ -1,0 +1,196 @@
+/* Feuille de style BBiblio */ 
+
+#blocPage
+{
+    width:80%;
+    margin:auto;
+}
+
+#loginUser
+{
+    float:right;
+    margin: 10px;
+}
+
+ul
+{
+    padding:0;
+    position:relative;
+}
+
+menu ul li
+{
+    display:inline-block;
+    list-style-type: none;
+    border: 1px solid black;
+    width:18%;
+    height: 20px;
+    background-color: azure;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+   
+}
+
+menu a
+{
+    text-decoration: none;
+}
+
+#formulaire a
+{
+    text-decoration:underline;
+}
+
+#formulaire
+{
+    overflow:visible;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    right:10px;
+    background-color: lightcoral;
+    box-shadow: 0px 0px 10px black;
+    border: 2px solid red;
+    font-weight: bold;
+    width: 21%;
+}
+
+header, footer
+{
+    border:2px solid blue;
+    box-shadow: 5px 5px 5px black;
+}
+
+header h1, header h3
+{
+    margin-left: 10px;
+}
+
+header h1 a
+{
+    text-decoration: none;
+}
+
+#sidebar
+{
+    width:30%;
+    height:1000px;
+    float:right;
+
+}
+
+.rs
+{
+    height:300px;
+    overflow:auto;
+    margin:10px;
+    box-shadow: 5px 5px 5px black;
+    border: 3px solid blue;
+    display: block;
+}
+
+#contenuNews
+{
+    margin: 20px 5px 20px 5px;
+    height: 1000px;
+}
+#contenuNews img
+{
+    width: 100%;
+}
+
+#titreImage
+{
+    width:68%;
+    position: relative;
+}
+
+#titreImage h2
+{
+    position:absolute;
+    bottom: 50px;
+    background-color: lightgray;
+    width:100%;
+    margin:0;
+    height: 40px;
+     
+
+}
+
+#titreImage h3
+{
+    position: absolute;
+    bottom:10px;
+    background-color: lightgray;
+    width:100%;
+    margin:0;
+    height: 40px;
+    
+}
+
+#corpsNews
+{
+    width:68%;
+    text-align: justify;
+}
+#aLire
+{
+    text-align:center;
+}
+
+#aLire a
+{
+    text-decoration: none;
+}
+
+#aLire ul li
+{
+    display: inline-block;
+    height: 150px ;
+    width: 24%;
+    background-color: lightgray;
+    border: 2px solid blue;
+}
+
+#corpsNews ul
+{
+    margin-right: 10px;
+}
+#corpsNews ul li
+{
+    display: inline;
+}
+
+#corpsNews ul li img
+{
+    width:25px;
+    height:25px;
+    border-radius:13px;
+    float: right;
+}
+#pubNews
+{
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    border:1px solid black;
+    text-align: center;
+    margin: 10px 30px 10px 0px;
+}
+
+footer
+{
+    text-align:center;
+    padding-right: 30px;
+}
+footer ul li
+{
+    display: inline;
+}
+
+footer img
+{
+    width:25px;
+    height:25px;
+    border-radius:13px;
+    float: right;
+}

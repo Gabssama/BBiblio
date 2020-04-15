@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Page admin</title>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-ui-1.12.1/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="../js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<link href="../js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocPage">
+        <header></header>
+            <div id="newsAdmin" class="recapAdmin">
+                <h3>News</h3>
+                <input type="button" value="Créer une news" id="creerNews">
+                <h3>Modifier une news</h3>
+                <p>
+                    <select name="cat" id="categorie" >
+                        <option value="romanfr">Roman Français</option>
+                        <option value="romanetr">Roman Etranger</option>
+                        <option value="biographie">Biographie</option>
+                        <option value="documentaire">Documentaire</option>
+                    </select>
+                </p>
+                <p>  
+                    <select name="newsOnline" id="newsModif" >
+                        <option value="News1">News1</option>
+                        <option value="News2">News2</option>
+                        <option value="News3">News3</option>
+                        <option value="News3">News4</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="button" value="Modifier la news" id="modifNews">
+                </p>
+            </div>
+            <div id="demandes" class="recapAdmin">
+                <table>
+                    <caption>Demandes de jury/auteur/éditeur</caption>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Date</th>
+                            <th>Profil</th>
+                            <th>Catégorie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="validationCandidature.html">25</a></td>
+                            <td>22/01/2020</td>
+                            <td>Jury</td>
+                            <td>Roman Français</td>
+                        </tr>
+                        <tr>
+                            <td><a href="validationCandidature.html">26</a></td>
+                            <td>12/03/2020</td>
+                            <td>Auteur</td>
+                            <td>Roman Etranger</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="oeuvres" class="recapAdmin">
+                <table>
+                    <caption>Oeuvres soumises à valider</caption>
+                    <thead>
+                        <th>Id</th>
+                        <th>Date</th>
+                        <th>Titre</th>
+                        <th>Catégorie</th>
+                        <th>Auteur</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="validationOeuvre.html">72</a></td>
+                            <td>22/01/2020</td>
+                            <td>Une sacrée histoire</td>
+                            <td>Roman Français</td>
+                            <td>Kévin</td>
+                        </tr>
+                        <tr>
+                            <td><a href="validationOeuvre.html">73</a></td>
+                            <td>12/03/2020</td>
+                            <td>What the fuck</td>
+                            <td>Roman Etranger</td>
+                            <td>Owen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="dernieresOeuvres" class="recapAdmin">
+                <table>
+                    <caption>Dernières oeuvres notées</caption>
+                    <thead>
+                        <th>Date</th>
+                        <th>Titre</th>
+                        <th>Juré</th>
+                        <th>Note</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>22/01/2020</td>
+                            <td><a href="avancement.html">Une sacrée histoire</a></td>
+                            <td><a href="profilJury.html">Robert</a></td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>12/03/2020</td>
+                            <td><a href="avancement.html">What the fuck</a></td>
+                            <td><a href="profilJury.html">Alex</a></td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+        <footer></footer>
+    </div>
+<script src="../js/appelHeaderAdmin.js"></script>
+<script src="../js/bbiblio.js"></script>
+</body>
+</html>
